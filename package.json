@@ -1,0 +1,15 @@
+{
+  "name": "package-health",
+  "version": "1.0.0",
+  "description": "A beautiful design with advanced css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Reza Radfar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
