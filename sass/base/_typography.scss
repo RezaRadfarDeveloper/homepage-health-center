@@ -1,10 +1,12 @@
 body {
     line-height: 1.6;
+    font-weight: 400px;
 }
 
 .heading-primary {
-   color: $color-white;
+   color: $color-secondary;
    text-transform: uppercase;
+   margin-bottom: 6rem;
 
     &--main {
         display: block;
@@ -22,3 +24,33 @@ body {
         text-align: center;
     }
 } 
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: .2rem;
+    background-image: linear-gradient(to right,$color-secondary, $color-secondary-light);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-tertiary {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-grey-dark;
+}
+
+.paragraph {
+font-weight: 400;
+font-size: 1.6rem;
+color: $color-grey-dark;
+
+&:not(:last-child) {
+    margin-bottom: 3rem;
+}
+}

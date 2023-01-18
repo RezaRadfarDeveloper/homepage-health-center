@@ -1,9 +1,15 @@
 .section-about {
-
+    width: 100%;
+    background-color: $color-grey-medium;
+    //test
+    height: 90rem ;
+    margin-top: -20vh;
+    padding: 20rem 0;
 }
 
 .section-products {
-
+    padding: 20rem 0;
+    background-color: $color-grey-light;
 }
 
 .section-blogs {
@@ -12,4 +18,14 @@
 
 .section-book {
 
+}
+
+.content-side {
+    width: 40%;
+    float: left;
+    margin-right: 6rem;
+}
+.image-side {
+    width: 40%;
+    float: right;
 }

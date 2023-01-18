@@ -6,6 +6,7 @@
     clip-path: polygon(0 0,100% 0,100% 75vh,50% 100%, 0 75vh);
     position: relative;
 
+
     &__logo-box {
         position: absolute;
         top: 2rem;
@@ -20,6 +21,7 @@
         position: absolute;
         top: 40%;
         left: 50%;
+        text-align: center;
         transform: translate(-50%, -50%);
     }
 }

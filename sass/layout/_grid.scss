@@ -1,0 +1,19 @@
+.row {
+    max-width: 114rem;
+    height: 60rem;
+    margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+ 
+
+    .col-1-of-3 {
+        width: calc((100% - 2*#{$gap-horizontal})/3);
+        float: left;
+        &:not(:last-child) {
+            margin-right: $gap-horizontal;
+        } 
+        display: block;
+    }
+}
+
