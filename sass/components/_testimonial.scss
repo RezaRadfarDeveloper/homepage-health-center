@@ -1,0 +1,58 @@
+.testimonial {
+ width: 75%;
+ margin: 0 auto;
+ border-radius: 3px;
+ box-shadow: 0 3rem 6rem rgba($color-black, .1);
+ background-color: $color-grey-light-2; 
+ padding: 6rem;
+ padding-left: 9rem;
+ font-size: 1.6rem;
+
+&__shape {
+    width: 15rem;
+    height: 15rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    float: left;
+    transform: translateX(-3rem);
+    position: relative;
+}
+
+&__img {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    transition: all .5s;
+    
+}
+
+&__text {
+
+}
+
+&__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $color-white;
+    font-size: 1.6rem;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+    text-align: center;
+    transition: all .5s;
+    text-transform: uppercase; 
+    backface-visibility: hidden;
+}
+
+&:hover &__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+&:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(2px) brightness(80%);
+}
+
+}

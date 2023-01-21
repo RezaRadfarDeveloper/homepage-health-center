@@ -50,4 +50,21 @@
         outline: none;
         box-shadow: 0 .5rem 3rem rgba($color-black, .4);
     }
+
+    &-text {
+        font-size: 1.6rem;
+        color: $color-secondary-light;
+        text-decoration: none;
+        border-bottom: 1px solid $color-secondary-light;
+        padding: 3px;
+        display: inline-block;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-secondary-light;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem (rgba($color-black, .15));
+            transform: translateY(-3px);
+        }
+    }
 }
