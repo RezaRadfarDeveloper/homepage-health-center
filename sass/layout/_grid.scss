@@ -1,10 +1,10 @@
 .row {
     max-width: 114rem;
-    height: 38rem;
+    height: 42rem;
     margin: 0 auto; 
     
-    &:not(:last-of-type) {
-        margin-bottom: 8rem;
+    &:not(:last-of-child) {
+        margin-bottom: 8rem; 
     }
  
 
