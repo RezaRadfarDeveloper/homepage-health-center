@@ -11,14 +11,16 @@
 <body>
     <div class="navigation">
         <input type="checkbox" class="navigation__input" id="nav-trigger">
-        <label for="nav-trigger" class="navigation__button">Menu</label>
+        <label for="nav-trigger" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
         <div class="navigation__background"></div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About health</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Contact us</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About health</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Contact us</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Our centers</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Team members</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Team members</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Here is all</a></li>
             </ul>
         </nav>
@@ -36,7 +38,7 @@
                         the support for health 
                     </span>
                 </h1>
-                <a href="" class="btn btn--gold btn--animated">visit our now</a>
+                <a href="" class="btn btn--gold btn-animated">visit our now</a>
            </div>
     </header>
     <main>
@@ -70,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-products">
+        <section class="section-products" id="section-products">
             <div class="row">
                 <div class="col-1-of-3">
                    <div class="card">
@@ -92,7 +94,7 @@
                        </div>
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
-                        back
+                       <a href="#popup"> click</a>
                     </div>
                    </div>
                 </div>
@@ -213,7 +215,51 @@
         </section>
     </main>
     <footer class="footer">
-            footer
-    </footer>    
+            <div class="footer__logo-box">
+                <img src="img/logo-green-2x.png" alt="#" class="footer__logo">
+            </div>
+            <div class="row"> 
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="" class="footer__link" src="#" alt="Link 1">Contact</a></li>
+                            <li class="footer__item"><a href="" class="footer__link" src="#" alt="Link 2">Policy & Privacy</a></li>
+                            <li class="footer__item"><a href="" class="footer__link" src="#" alt="Link 3">About</a></li>
+                            <li class="footer__item"><a href="" class="footer__link" src="#" alt="Link 4">Products</a></li>
+                            <li class="footer__item"><a href="" class="footer__link" src="#" alt="Link 5">Book</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="footer__copyright">
+                        Built by <a href="#" class="footer__link">Reza Radfar</a> for his portfolio <a href="#" class="footer__link">Portfolio</a>.
+                        Copyright &copy; by Reza Radfar. This is designed to show the level of skills for prospect clients.
+                        , but not for a specific company for now. I am so happy of providing such a great sample of advanced css. 
+                        
+                    </div>
+                </div>
+            </div>
+    </footer>  
+    <div class="popup" id="popup">
+        <div class="popup__content-box">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Health Center 1" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Health Center 2" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-products" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-mb-sm">Book Now</h2>
+                <h3 class="heading-tertiary u-mb-sm">Important &ndash; Limited places are available</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempor est, id venenatis ligula feugiat vitae. Cras ut mi augue. Phasellus blandit posuere mi non euismod. Fusce urna metus, ullamcorper ut placerat eget, ornare quis ante.
+                    id venenatis ligula feugiat vitae. Cras ut mi augue. Phasellus blandit posuere mi non euismod. Fusce urna metus, ullamcorper ut placerat eget, ornare quis ante.
+                    urna metus, ullamcorper ut placerat eget, ornare quis ante.
+                </p>
+                <div class="btn btn--gold">
+                    Start Now
+                </div>
+            </div>
+        </div>
+    </div>  
 </body>
 </html>

@@ -67,4 +67,8 @@
             transform: translateY(-3px);
         }
     }
+
+    &-animated {
+        animation: moveFromBottom 1s ease-out .75s backwards;
+    }
 }
