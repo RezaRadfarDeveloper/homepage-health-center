@@ -17,6 +17,11 @@ body {
         letter-spacing: 3.5rem;
         text-align: center;
         animation: moveFromLeft 1s ease-out;
+
+        @include respond(phone) { 
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
 
     &--sub {  
@@ -27,6 +32,10 @@ body {
         text-align: center;
         animation: moveFromRight 1s ease-out;
 
+        @include respond(phone) { 
+            letter-spacing: .5rem;
+            font-size: 1.5rem;
+        }
     }
 } 
 
@@ -40,6 +49,14 @@ body {
     background-image: linear-gradient(to right,$color-secondary-light, $color-secondary);
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-port) { 
+        font-size: 2.5rem;
+    }
+
+    @include respond(phone) { 
+        font-size: 2rem;
+    }
 }
 
 .heading-tertiary {
