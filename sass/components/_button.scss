@@ -26,6 +26,11 @@
         background-color: $color-secondary;
     } 
 
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark !important;
+    } 
+
     &::before {
         content: "";
         width: 100%;
